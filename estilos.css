@@ -1,0 +1,11 @@
+/*Esta es la hohja de estilo de pruebas*/
+h1{
+    background-color: blue;
+    color: white;
+}
+header{
+    box-shadow: 10px 10px greenyellow;
+}
+p{
+    color:green;
+}
