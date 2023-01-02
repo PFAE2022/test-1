@@ -1,23 +1,263 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba</title>
-    <link href="estilos.css" rel="stylesheet"/>
+    <meta name="[Noelia Brito Díaz]" content="[esta página web es para mi portafolio personal]">
+    <title>Moon N-Luna</title>
+    <link rel="icon" href="logo/logo_trasparente.png" type="Imagen/png">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/*Este es el css de la navegación*/
+        nav{
+            background-color: #f3d2c1;
+            display: flex;
+            justify-content: center;
+            word-spacing: 0.1em;
+            letter-spacing: 0.1em;
+        }
+        nav a{ 
+            color: #2d334a;
+            text-decoration: none;
+            padding: 1em;
+            font-size: 1.1rem;
+            margin-left: 3em;
+            display: inline-block; 
+        }
+        .imagen_logo{
+            height: 5em;
+        }
+
+/*Este es el css de la imagen mia con el texto sobre mi*/
+.Sobre_mi{
+    display: flex;
+    padding: 2em;
+}
+
+.imagen_mia{
+    margin-right: 8em;
+    padding: 2.5em;
+}
+
+
+.imagen_mia img{
+    margin-left: 3em;
+    height: 25em;
+    border-radius: 5rem;
+
+}
+.texto_sobremi{
+    padding: 4em;
+}
+
+.texto_sobremi h1{
+    font-size: 3.6rem;
+    color:#272343; 
+    letter-spacing: 0.05em;
+    word-spacing: 0.2;
+}
+
+.texto_sobremi p{
+    color:#2d334a;
+    font-size: 1.3rem;
+    justify-content: center;
+    position: relative;
+    top:3vh;
+    letter-spacing: 0.05em;
+    word-spacing: 0.2;
+}
+
+.curriculum{
+    background-color: #f3d2c1;
+    margin-top:5vh;
+    border: none;
+    border-radius: 2em;
+    padding: 15px 50px;
+    color: #2d334a;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/*Este es el css de mis proyectos*/
+
+.mis_proyectos h2{
+    font-size: 50px;
+    color:#272343; 
+    letter-spacing: 0.05em;
+    word-spacing: 0.2;
+    justify-content: center;  
+    text-align: center;
+}
+
+/*Este de formación complementaria*/
+
+.formacióncomplementaria h2{
+    font-size: 50px;
+    color:#272343; 
+    letter-spacing: 0.05em;
+    word-spacing: 0.2;
+    justify-content: center;  
+    text-align: center;
+}
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>
-            Esto es una prueba de un cambio 
-        </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-            Id reprehenderit fugiat veritatis. Quos, laudantium temporibus.
-        </p>
-    </header>
-    <nav>
-        <a href="#">Página de prueba de Sofía</a>
-    </nav>
+    <div>
+        <nav>
+            <img class="imagen_logo" src="logo/logo_trasparente.png" alt="Logo">
+            <a href="">Inicio</a>
+            <a href="">Sobre mi</a>
+            <a href="">Formación complementaria</a>
+            <a href="">Mis proyectos</a>
+            <a href="">Contacto</a>
+        </nav>
+    </div>
+    <div class="Sobre_mi">
+        <div class="texto_sobremi">
+            <h1>Noelia Brito Díaz</h1>
+            <p>
+              ¡Hola a todos! <br>
+              Soy Pedagoga por la Universidad de Salamanca y programadora de páginas web.
+              Además, soy la persona que está detrás de esta página web. <br> 
+              Así mismo, me encuentro realizando el máster de Formación del Profesorado 
+              en la Universidad de Internet (UNIR). 
+              <br> 
+            </p> 
+            <input class="curriculum" type="submit" value="Curriculum">
+        </div>
+        <div class="imagen_mia">
+            <img src="Imagenes/mifotofondo.png" alt="sticker">
+        </div>
+    </div>
+
+    <!-- CODIGO FORMACIÓN COMPLEMENTARIA -->
+
+    <section id="resume" class="grey-section">
+   
+      <!-- /section-intro-->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2 class="tituloformacioncomplementaria">Formación complementaria</h2>
+
+          <!-- quiero poner alguna p con una frases sobre la formación continua.--------------
+          ------------IMPORTANTEEEEEEEEEEEEEE -->
+
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <p>2020</p>
+              </div>
+
+              <div class="timeline-content">
+                <h3>Universidad de Salamanca (USAL) </h3>
+                <p>
+                  Formación en problemas de salud mental <span>(25 horas).</span> 
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <p>2021</p>
+              </div>
+
+              <div class="timeline-content">
+                <h3>UNIR</h3>
+                <p>
+                 La atención a la diversidad de una realidad cambiante en los centros <span>(100 horas).</span>
+                </p>
+            
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <p>2021</p>
+              </div>
+
+              <div class="timeline-content">
+                <h3>UNIR</h3>
+                <p>
+                  Lectoescritura. Aprendizaje, Dificultades, Evaluación e Implicación educativa <span>(100 horas).</span>
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <p>2021</p>
+              </div>
+
+              <div class="timeline-content">
+                <h3>UNIR</h3>
+                <p>
+                  Niños con altas capacidades. Como desarrollar su potencial <span>(100 horas).</span> 
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+            <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-header">
+              <p>2022</p>
+            </div>
+
+            <div class="timeline-content">
+              <h3>Deportae</h3>
+              <p>
+               Monitora de educación especial <span>(50 horas).</span>
+              </p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+
+    </section>
+    <!-- /features -->
+
+    <!-- CODIGO DE MIS PROYECTOS -->
+    
 </body>
 </html>
